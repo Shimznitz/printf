@@ -9,7 +9,10 @@
  */
 int _printf(const char *format, ...)
 {
-		printf(format);
+	va_list ap;
+	va_start(ap, format);
 
-		return (strlen(format));
+	printf(format);
+	va_end(ap);
+	return (strlen(format));
 }
