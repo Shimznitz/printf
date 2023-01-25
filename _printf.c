@@ -9,10 +9,7 @@
  */
 int _printf(const char *format, ...)
 {
-	int _printf(const char *format, ...)
-	{
 		printf(format);
 
 		return (strlen(format));
-	}
 }
